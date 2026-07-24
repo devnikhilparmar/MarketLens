@@ -1,6 +1,6 @@
-namespace CWM.CleanArchitecture.Application.Abstractions.Messaging;
+namespace MarketLens.Application.Abstractions.Messaging;
 
-using CWM.CleanArchitecture.Domain.Common;
+using MarketLens.Domain.Common;
 
 public interface ICommandHandler<in TCommand> : ICommandHandler<TCommand, Result>
     where TCommand : ICommand;

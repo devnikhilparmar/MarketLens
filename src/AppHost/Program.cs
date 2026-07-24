@@ -1,16 +1,15 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var postgres = builder.AddPostgres("postgres")
-    .WithPgAdmin()
+var sqlServer = builder.AddSqlServer("sql")
     .WithLifetime(ContainerLifetime.Persistent);
 
-var database = postgres.AddDatabase("cwm-db");
+var database = sqlServer.AddDatabase("marketlens-db");
 
-var redis = builder.AddRedis("cwm-cache")
+var redis = builder.AddRedis("marketlens-cache")
     .WithRedisInsight()
     .WithLifetime(ContainerLifetime.Persistent);
 
-builder.AddProject<Projects.CWM_CleanArchitecture_Api>("api")
+builder.AddProject<Projects.MarketLens_Api>("api")
     .WithReference(database)
     .WaitFor(database)
     .WithReference(redis)

@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Api.Extensions;
+namespace MarketLens.Api.Extensions;
 
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;

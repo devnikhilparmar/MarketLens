@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Application.Features.Identity.Register;
+namespace MarketLens.Application.Features.Identity.Register;
 
 using FluentValidation;
 

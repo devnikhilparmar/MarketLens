@@ -1,6 +1,6 @@
-namespace CWM.CleanArchitecture.Api.Extensions;
+namespace MarketLens.Api.Extensions;
 
-using CWM.CleanArchitecture.Domain.Common;
+using MarketLens.Domain.Common;
 
 public static class ResultExtensions
 {

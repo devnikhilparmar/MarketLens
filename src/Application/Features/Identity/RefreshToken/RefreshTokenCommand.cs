@@ -1,7 +1,7 @@
-namespace CWM.CleanArchitecture.Application.Features.Identity.RefreshToken;
+namespace MarketLens.Application.Features.Identity.RefreshToken;
 
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
-using CWM.CleanArchitecture.Application.Abstractions.Messaging;
-using CWM.CleanArchitecture.Domain.Common;
+using MarketLens.Application.Abstractions.Identity;
+using MarketLens.Application.Abstractions.Messaging;
+using MarketLens.Domain.Common;
 
 public sealed record RefreshTokenCommand(string AccessToken, string RefreshToken) : ICommand<Result<TokenResponse>>;

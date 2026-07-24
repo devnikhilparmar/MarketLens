@@ -1,8 +1,8 @@
-namespace CWM.CleanArchitecture.Application.Features.Identity.Register;
+namespace MarketLens.Application.Features.Identity.Register;
 
-using CWM.CleanArchitecture.Application.Abstractions.Messaging;
-using CWM.CleanArchitecture.Domain.Common;
-using CWM.CleanArchitecture.Domain.Entities;
+using MarketLens.Application.Abstractions.Messaging;
+using MarketLens.Domain.Common;
+using MarketLens.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 
 public sealed class RegisterCommandHandler(UserManager<ApplicationUser> userManager) : ICommandHandler<RegisterCommand>

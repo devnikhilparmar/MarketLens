@@ -4,8 +4,8 @@
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Application\CWM.CleanArchitecture.Application.csproj" />
-    <ProjectReference Include="..\..\src\Infrastructure\CWM.CleanArchitecture.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Application\MarketLens.Application.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\MarketLens.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />

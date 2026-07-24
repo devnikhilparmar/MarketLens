@@ -1,14 +1,14 @@
 services:
-  postgres:
-    image: postgres:17
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      POSTGRES_USER: cwm
-      POSTGRES_PASSWORD: cwm_password
-      POSTGRES_DB: cwm_cleanarch
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Your_password123"
+      MSSQL_PID: "Developer"
     ports:
-      - "5432:5432"
+      - "1433:1433"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - sqlserver_data:/var/opt/mssql
 
   redis:
     image: redis:7-alpine
@@ -16,4 +16,4 @@ services:
       - "6379:6379"
 
 volumes:
-  postgres_data:
+  sqlserver_data:

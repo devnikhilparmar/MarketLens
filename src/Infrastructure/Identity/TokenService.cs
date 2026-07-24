@@ -1,11 +1,11 @@
-namespace CWM.CleanArchitecture.Infrastructure.Identity;
+namespace MarketLens.Infrastructure.Identity;
 
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
-using CWM.CleanArchitecture.Domain.Entities;
+using MarketLens.Application.Abstractions.Identity;
+using MarketLens.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;

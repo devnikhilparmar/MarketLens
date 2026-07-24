@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Application.Abstractions.Messaging;
+namespace MarketLens.Application.Abstractions.Messaging;
 
 public interface IQueryHandler<in TQuery, TResponse>
     where TQuery : IQuery<TResponse>

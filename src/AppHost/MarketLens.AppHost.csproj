@@ -5,11 +5,11 @@
     <IsAspireHost>true</IsAspireHost>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Api\CWM.CleanArchitecture.Api.csproj" />
+    <ProjectReference Include="..\Api\MarketLens.Api.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" />
-    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" />
     <PackageReference Include="Aspire.Hosting.Redis" />
   </ItemGroup>
 </Project>

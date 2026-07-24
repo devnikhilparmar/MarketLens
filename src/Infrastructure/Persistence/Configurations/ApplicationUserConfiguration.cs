@@ -1,6 +1,6 @@
-namespace CWM.CleanArchitecture.Infrastructure.Persistence.Configurations;
+namespace MarketLens.Infrastructure.Persistence.Configurations;
 
-using CWM.CleanArchitecture.Domain.Entities;
+using MarketLens.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

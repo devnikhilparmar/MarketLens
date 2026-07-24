@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Domain.Common;
+namespace MarketLens.Domain.Common;
 
 public sealed record Error(string Code, string Message, ErrorType Type = ErrorType.Failure)
 {

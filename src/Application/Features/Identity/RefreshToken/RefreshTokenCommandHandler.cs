@@ -1,8 +1,8 @@
-namespace CWM.CleanArchitecture.Application.Features.Identity.RefreshToken;
+namespace MarketLens.Application.Features.Identity.RefreshToken;
 
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
-using CWM.CleanArchitecture.Application.Abstractions.Messaging;
-using CWM.CleanArchitecture.Domain.Common;
+using MarketLens.Application.Abstractions.Identity;
+using MarketLens.Application.Abstractions.Messaging;
+using MarketLens.Domain.Common;
 
 public sealed class RefreshTokenCommandHandler(ITokenService tokenService) : ICommandHandler<RefreshTokenCommand, Result<TokenResponse>>
 {

@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Application.Abstractions.Identity;
+namespace MarketLens.Application.Abstractions.Identity;
 
 public interface ICurrentUser
 {

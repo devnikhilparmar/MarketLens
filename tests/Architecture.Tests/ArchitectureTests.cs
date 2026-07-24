@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Architecture.Tests;
+namespace MarketLens.Architecture.Tests;
 
 using System.Reflection;
 using FluentAssertions;
@@ -10,10 +10,10 @@ public sealed class ArchitectureTests
     private static readonly Assembly ApplicationAssembly = typeof(Application.DependencyInjection).Assembly;
     private static readonly Assembly InfrastructureAssembly = typeof(Infrastructure.DependencyInjection).Assembly;
 
-    private const string DomainNamespace = "CWM.CleanArchitecture.Domain";
-    private const string ApplicationNamespace = "CWM.CleanArchitecture.Application";
-    private const string InfrastructureNamespace = "CWM.CleanArchitecture.Infrastructure";
-    private const string ApiNamespace = "CWM.CleanArchitecture.Api";
+    private const string DomainNamespace = "MarketLens.Domain";
+    private const string ApplicationNamespace = "MarketLens.Application";
+    private const string InfrastructureNamespace = "MarketLens.Infrastructure";
+    private const string ApiNamespace = "MarketLens.Api";
 
     [Fact]
     public void Domain_Should_Not_Depend_On_Application()
@@ -112,7 +112,7 @@ public sealed class ArchitectureTests
     {
         var result = Types.InAssembly(DomainAssembly)
             .That()
-            .ResideInNamespace("CWM.CleanArchitecture.Domain.Entities")
+            .ResideInNamespace("MarketLens.Domain.Entities")
             .Should()
             .BeSealed()
             .GetResult();
