@@ -1,12 +1,12 @@
-namespace CWM.CleanArchitecture.Api.Endpoints;
+namespace MarketLens.Api.Endpoints;
 
-using CWM.CleanArchitecture.Api.Extensions;
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
-using CWM.CleanArchitecture.Application.Abstractions.Messaging;
-using CWM.CleanArchitecture.Application.Features.Identity.Login;
-using CWM.CleanArchitecture.Application.Features.Identity.RefreshToken;
-using CWM.CleanArchitecture.Application.Features.Identity.Register;
-using CWM.CleanArchitecture.Domain.Common;
+using MarketLens.Api.Extensions;
+using MarketLens.Application.Abstractions.Identity;
+using MarketLens.Application.Abstractions.Messaging;
+using MarketLens.Application.Features.Identity.Login;
+using MarketLens.Application.Features.Identity.RefreshToken;
+using MarketLens.Application.Features.Identity.Register;
+using MarketLens.Domain.Common;
 
 public static class IdentityEndpoints
 {

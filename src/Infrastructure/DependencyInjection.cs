@@ -1,11 +1,11 @@
-namespace CWM.CleanArchitecture.Infrastructure;
+namespace MarketLens.Infrastructure;
 
 using System.Text;
-using CWM.CleanArchitecture.Application.Abstractions.Data;
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
-using CWM.CleanArchitecture.Domain.Entities;
-using CWM.CleanArchitecture.Infrastructure.Identity;
-using CWM.CleanArchitecture.Infrastructure.Persistence;
+using MarketLens.Application.Abstractions.Data;
+using MarketLens.Application.Abstractions.Identity;
+using MarketLens.Domain.Entities;
+using MarketLens.Infrastructure.Identity;
+using MarketLens.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;

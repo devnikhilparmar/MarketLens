@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Domain/MarketLens.Domain.csproj" />
+    <Project Path="Application/MarketLens.Application.csproj" />
+    <Project Path="Infrastructure/MarketLens.Infrastructure.csproj" />
+    <Project Path="Api/MarketLens.Api.csproj" />
+  </Folder>
+  <Folder Name="/aspire/">
+    <Project Path="AppHost/MarketLens.AppHost.csproj" />
+    <Project Path="ServiceDefaults/MarketLens.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="../tests/Architecture.Tests/MarketLens.Architecture.Tests.csproj" />
+    <Project Path="../tests/Application.UnitTests/MarketLens.Application.UnitTests.csproj" />
+  </Folder>
+</Solution>

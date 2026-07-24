@@ -1,7 +1,7 @@
-namespace CWM.CleanArchitecture.Infrastructure.Identity;
+namespace MarketLens.Infrastructure.Identity;
 
 using System.Security.Claims;
-using CWM.CleanArchitecture.Application.Abstractions.Identity;
+using MarketLens.Application.Abstractions.Identity;
 using Microsoft.AspNetCore.Http;
 
 public sealed class CurrentUser(IHttpContextAccessor httpContextAccessor) : ICurrentUser

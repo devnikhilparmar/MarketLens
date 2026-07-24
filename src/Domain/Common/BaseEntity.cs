@@ -1,4 +1,4 @@
-namespace CWM.CleanArchitecture.Domain.Common;
+namespace MarketLens.Domain.Common;
 
 public abstract class BaseEntity
 {

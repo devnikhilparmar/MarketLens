@@ -1,7 +1,7 @@
-namespace CWM.CleanArchitecture.Application;
+namespace MarketLens.Application;
 
 using System.Reflection;
-using CWM.CleanArchitecture.Application.Abstractions.Messaging;
+using MarketLens.Application.Abstractions.Messaging;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 

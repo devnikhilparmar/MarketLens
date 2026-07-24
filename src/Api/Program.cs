@@ -1,9 +1,9 @@
-using CWM.CleanArchitecture.Api.Endpoints;
-using CWM.CleanArchitecture.Api.Extensions;
-using CWM.CleanArchitecture.Application;
-using CWM.CleanArchitecture.Infrastructure;
-using CWM.CleanArchitecture.Infrastructure.Persistence;
-using CWM.CleanArchitecture.ServiceDefaults;
+using MarketLens.Api.Endpoints;
+using MarketLens.Api.Extensions;
+using MarketLens.Application;
+using MarketLens.Infrastructure;
+using MarketLens.Infrastructure.Persistence;
+using MarketLens.ServiceDefaults;
 using Scalar.AspNetCore;
 using Serilog;
 
@@ -22,11 +22,11 @@ try
     builder.Host.UseSerilog((context, loggerConfiguration) =>
         loggerConfiguration.ReadFrom.Configuration(context.Configuration));
 
-    // Aspire-managed PostgreSQL
-    builder.AddNpgsqlDbContext<AppDbContext>("cwm-db");
+    // Aspire-managed SQL Server (falls back to ConnectionStrings:marketlens-db when run standalone)
+    builder.AddSqlServerDbContext<AppDbContext>("marketlens-db");
 
     // Aspire-managed Redis (for HybridCache L2)
-    builder.AddRedisDistributedCache("cwm-cache");
+    builder.AddRedisDistributedCache("marketlens-cache");
 
     // Application & Infrastructure
     builder.Services.AddApplication();
@@ -41,13 +41,8 @@ try
         options.AddDocumentTransformer((document, _, _) =>
         {
             var info = document.Info ?? new Microsoft.OpenApi.OpenApiInfo();
-            info.Title = "CWM Clean Architecture API";
-            info.Description = "A production-ready Clean Architecture template for .NET 10 by Mukesh Murugan";
-            info.Contact = new Microsoft.OpenApi.OpenApiContact
-            {
-                Name = "Mukesh Murugan",
-                Url = new Uri("https://codewithmukesh.com")
-            };
+            info.Title = "MarketLens API";
+            info.Description = "MarketLens API — Clean Architecture on .NET 10";
             document.Info = info;
 
             var components = document.Components ?? new Microsoft.OpenApi.OpenApiComponents();
@@ -88,7 +83,7 @@ try
         app.MapOpenApi();
         app.MapScalarApiReference(options =>
         {
-            options.WithTitle("CWM Clean Architecture API");
+            options.WithTitle("MarketLens API");
             options.WithTheme(ScalarTheme.BluePlanet);
             options.WithDefaultHttpClient(ScalarTarget.Shell, ScalarClient.Curl);
         });
@@ -101,7 +96,6 @@ try
 
     // Map endpoints
     app.MapIdentityEndpoints();
-    app.MapTodoEndpoints();
 
     // Aspire default endpoints (health, alive)
     app.MapDefaultEndpoints();

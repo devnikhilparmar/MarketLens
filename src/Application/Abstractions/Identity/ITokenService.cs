@@ -1,6 +1,6 @@
-namespace CWM.CleanArchitecture.Application.Abstractions.Identity;
+namespace MarketLens.Application.Abstractions.Identity;
 
-using CWM.CleanArchitecture.Domain.Entities;
+using MarketLens.Domain.Entities;
 
 public interface ITokenService
 {

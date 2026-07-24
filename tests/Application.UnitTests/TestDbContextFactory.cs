@@ -1,6 +1,6 @@
-namespace CWM.CleanArchitecture.Application.UnitTests;
+namespace MarketLens.Application.UnitTests;
 
-using CWM.CleanArchitecture.Infrastructure.Persistence;
+using MarketLens.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 public static class TestDbContextFactory
