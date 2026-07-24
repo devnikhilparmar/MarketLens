@@ -2,8 +2,6 @@
 
 **v1.0.0** | .NET 10 | C# 14 | Aspire 13 | EF Core 10 | xUnit v3
 
-A production-ready **Clean Architecture** starter template for **.NET 10** by [Mukesh Murugan](https://codewithmukesh.com).
-
 Built with the latest packages, zero commercial dependencies, and everything you need to start shipping features from day one.
 
 ## Tech Stack
@@ -151,15 +149,6 @@ Follow the Todos pattern:
 | **Result pattern** over exceptions | Explicit error handling, no hidden control flow, better API contracts. |
 | **Manual handler registration** over Scrutor | Zero dependencies for DI scanning. Assembly reflection is 40 lines of code. |
 | **.slnx** over .sln | XML-based, merge-friendly, smaller, future of .NET solutions. |
-
-## About
-
-Built by [Mukesh Murugan](https://codewithmukesh.com) — .NET content creator helping developers build production-ready applications.
-
-- [Newsletter](https://codewithmukesh.com/newsletter) — Weekly .NET insights, architecture deep-dives, and exclusive content
-- [LinkedIn](https://linkedin.com/in/iaboromukesh) — 40K+ followers
-- [YouTube](https://youtube.com/@codewithmukesh) — Video tutorials and walkthroughs
-- [GitHub](https://github.com/iammukeshm) — Open source projects
 
 ## License
 
